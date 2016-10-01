@@ -6,6 +6,7 @@ services:
       context: .
       args:
         buildno: 1
+        gitsha: "${GITSHA}"
     image: test
     environment:
       TEST_ENV: development

@@ -13,8 +13,10 @@ RUN apt-get update  \
  && rm -r /var/lib/apt/lists/*
 
 ARG buildno
+ARG gitsha
 
 RUN echo "Build number: $buildno" > build_env.txt
+RUN echo "git sha1: $gitsha" >> build_env.txt
 
 ADD run.sh /
 CMD "/run.sh"
