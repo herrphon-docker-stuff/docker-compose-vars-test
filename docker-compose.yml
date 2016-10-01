@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  test:
+    build: 
+      context: .
+      args:
+        buildno: 1
+    image: test
+    environment:
+      TEST_ENV: development
+
+
