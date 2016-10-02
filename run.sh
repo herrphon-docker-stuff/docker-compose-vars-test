@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo ${TEST_ENV}
+echo Environment var:
+echo TEST_ENV: ${TEST_ENV}
 
+echo Build vars:
 cat build_env.txt
 
